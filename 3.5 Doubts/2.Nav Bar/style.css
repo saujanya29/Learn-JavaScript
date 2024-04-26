@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Here We are creating the Mobile size screen style then using media screen we will change it for bigger screens  */
+
+nav{
+    background-color: #333;
+    color: white;
+    display: flex;
+    /* this will make heading and nav list in column  */
+    flex-direction: column;
+    position: relative;
+    padding: 20px;
+}
+
+.nav-menu-link{
+   text-align: center;
+    display: block;
+    padding: 20px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+/* This is to create whitis background color when we hover the ancher texts */
+a:hover {
+    background-color: #777;
+}
+
+.toggler{
+    /* This will allows us to position our toggler icon as per our need */
+    position: absolute;
+    right: 10px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    /* this will allow list items in column */
+    flex-direction: column;
+}
+
+/* For mobile screen navlinks diaplay will be none and when active class is assigned to using js it again becomes block */
+.nav-links{
+    display: none;
+}
+.nav-links.active{
+    display: block;
+
+}
+
+
+
+
+
+@media screen and (min-width : 700px) {
+
+    /* FOr full screen sizes nav bar in row dir and ul in row dir and 
+    and also align items of nav to center  */
+
+    /* for full screen the nav links should be visible  */
+    .nav-links{
+            display: block;
+    }
+     
+    ul{
+        flex-direction: row;
+        justify-content:space-around;
+        
+    }
+    nav{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .toggler{
+        display: none;
+    }
+
+    
+}

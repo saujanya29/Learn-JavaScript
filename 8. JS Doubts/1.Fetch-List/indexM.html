@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .profile-card{
+            box-shadow: 2px 2px 2px 2px gray;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container" id="container">
+     
+    <!-- <div class="profile-card" id="profile-card">
+         
+        <img src="https://via.placeholder.com/300" alt="" id="user-img">
+        <h2 id="user-name" class="title">Saujanya Shukla</h2>
+        <p id="user-email" class="email">saujanyashukla29092002@gmail.com</p>
+
+   </div> -->
+
+</div>
+
+
+
+
+
+<!-- The data in the template will not be visible but can be accessed using id  and we will see how we used this template to create clone -->
+
+<!-- if template is not used and we try to make display property none of template that is clonned then it will show in the page for some time then will disappear but using this will not happend -->
+
+
+<template id="profile-card-template">
+     
+    <div class="profile-card" id="profile-card">
+         
+        <img src="https://via.placeholder.com/300" alt="" id="user-img">
+        <h2 id="user-name" class="title">Saujanya Shukla</h2>
+        <p id="user-email" class="email">saujanyashukla29092002@gmail.com</p>
+
+   </div>
+
+</template>
+
+<script src="scriptM.js"></script>
+    
+</body>
+</html>
